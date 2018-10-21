@@ -1,26 +1,27 @@
-//
-//  AppDelegate.swift
-//  airhorn
-//
-//  Created by Sammy Gutiérrez on 10/21/18.
-//  Copyright © 2018 Sammy Gutiérrez. All rights reserved.
-//
-
 import Cocoa
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+final class AppDelegate: NSObject, NSApplicationDelegate {
 
-
+    private let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        setupMenuIcon()
     }
 
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+    /// Sets the menu image and action
+    private func setupMenuIcon() {
+        statusItem.button?.action = #selector(playAirhorn(_:))
+        let menuImage = NSImage(named: "airhorn")
+        menuImage?.isTemplate = true
+        statusItem.button?.image = menuImage
     }
 
+    /// Plays airhorn sound. Supports playing multiple sounds simultaneously.
+    @objc private func playAirhorn(_ sender: AnyObject?) {
+        guard let airhorn = NSSound(named: "airhorn")?.copy() as? NSSound else { fatalError() }
+        airhorn.play()
+    }
 
 }
 

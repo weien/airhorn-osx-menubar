@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		A5B92955217CEF43002552E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B92954217CEF43002552E0 /* AppDelegate.swift */; };
-		A5B92957217CEF43002552E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B92956217CEF43002552E0 /* ViewController.swift */; };
 		A5B92959217CEF45002552E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5B92958217CEF45002552E0 /* Assets.xcassets */; };
 		A5B9295C217CEF45002552E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B9295A217CEF45002552E0 /* Main.storyboard */; };
+		A5D12752217CF3A80097CDB1 /* airhorn.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5D12751217CF3A80097CDB1 /* airhorn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A5B92951217CEF43002552E0 /* airhorn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airhorn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B92954217CEF43002552E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5B92956217CEF43002552E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5B92958217CEF45002552E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5B9295B217CEF45002552E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5B9295D217CEF45002552E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5B9295E217CEF45002552E0 /* airhorn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = airhorn.entitlements; sourceTree = "<group>"; };
+		A5D12751217CF3A80097CDB1 /* airhorn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = airhorn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,13 +54,21 @@
 			isa = PBXGroup;
 			children = (
 				A5B92954217CEF43002552E0 /* AppDelegate.swift */,
-				A5B92956217CEF43002552E0 /* ViewController.swift */,
 				A5B92958217CEF45002552E0 /* Assets.xcassets */,
 				A5B9295A217CEF45002552E0 /* Main.storyboard */,
+				A5D1274A217CF2010097CDB1 /* Resources */,
 				A5B9295D217CEF45002552E0 /* Info.plist */,
 				A5B9295E217CEF45002552E0 /* airhorn.entitlements */,
 			);
 			path = airhorn;
+			sourceTree = "<group>";
+		};
+		A5D1274A217CF2010097CDB1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5D12751217CF3A80097CDB1 /* airhorn.wav */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5B92959217CEF45002552E0 /* Assets.xcassets in Resources */,
+				A5D12752217CF3A80097CDB1 /* airhorn.wav in Resources */,
 				A5B9295C217CEF45002552E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,7 +142,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5B92957217CEF43002552E0 /* ViewController.swift in Sources */,
 				A5B92955217CEF43002552E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
